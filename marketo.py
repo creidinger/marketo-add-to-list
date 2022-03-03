@@ -59,8 +59,8 @@ class Marketo():
             self.logger.info(f'Marketo.create_lead: {e}')
             return None
 
-        self.logger.error('Marketo.create_lead: Success!')
-        self.logger.error(f'Marketo.create_lead: {response}')
+        self.logger.info('Marketo.create_lead: Success!')
+        self.logger.info(f'Marketo.create_lead: {response}')
         return response
 
     def add_to_list(self, lead_id):
